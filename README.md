@@ -1,10 +1,10 @@
 # VAE-based molecule generation and translation
 
-This is a joint PyTorch implementation of three papers in VAE-based molecule generation and translation. The papers are as follows:
+This is a joint PyTorch implementation of three papers in VAE-based molecule generation and translation. The papers and the official repos are as follows:
 
-* Junction Tree Variational Autoencoder for Molecular Graph Generation (ICML 2018)
-* Learning Multimodal Graph-to-Graph Translation for Molecular Optimization (ICLR 2019)
-* Hierarchical Generation of Molecular Graphs using Structural Motifs (ICML 2020)
+* [Junction Tree Variational Autoencoder for Molecular Graph Generation (ICML 2018)](https://github.com/wengong-jin/icml18-jtnn)
+* [Learning Multimodal Graph-to-Graph Translation for Molecular Optimization (ICLR 2019)](https://github.com/wengong-jin/iclr19-graph2graph)
+* [Hierarchical Generation of Molecular Graphs using Structural Motifs (ICML 2020)](https://github.com/wengong-jin/hgraph2graph)
 
 The master branch works with PyTorch 1.8+.
 
