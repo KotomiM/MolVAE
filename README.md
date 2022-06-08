@@ -19,32 +19,25 @@ MolVAE has been tested under Python 3.7 with PyTorch 1.11 on cuda 11.4
    conda activate vae_py37
    ```
 
-2. Install RDKit, PyTorch
+2. Install RDKit
 
    ```bash
    conda install rdkit -c rdkit
    ```
    
-  Install PyTorch following [official instructions](https://pytorch.org/get-started/locally/), e.g.
-   PyTorch on GPU platforms:
+3. Install PyTorch following [official instructions](https://pytorch.org/get-started/locally/), e.g. PyTorch on GPU platforms:    
 
-   ```bash
-   conda install pytorch torchvision -c pytorch
-   ```
+    ```bash
+    conda install pytorch torchvision -c pytorch
+    ```
 
-   PyTorch on CPU platforms:
-
-   ```bash
-   conda install pytorch torchvision cpuonly -c pytorch
-   ```
-
-3. Install other requirements:
+4. Install other requirements:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Install Chemprop (from source, additional dependency for property-guided finetuning)
+5. Install Chemprop (from source, additional dependency for property-guided finetuning)
 
    ```bash
    git clone https://github.com/chemprop/chemprop.git
