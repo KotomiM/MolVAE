@@ -1,0 +1,42 @@
+{
+    "model" : "hiervae",
+    "train_set" : "",
+    "train_mode" : "single",
+    "vocab_set" : "",
+    "vocab_mode" : "PairVocab",
+    "valid_set" : "",
+
+    "preprocess_save_dir" : "preprocessed/polymers/hiervae",
+    "decode_save_dir" : "results/polymers/hiervae",
+    "model_save_dir" : "ckpt/polymers/hiervae",
+    "ncpu" : 8,
+    "batch_size" : 50,
+    "nsample" : 10000,
+
+    "train_epoch" : 20,
+    "load_model" : "",
+    "load_epoch" : -1,
+    "seed" : 7,
+
+    "rnn_type" : "LSTM",
+    "hidden_size" : 250,
+    "embed_size" : 250,
+    "latent_size" : 32,
+    "depthT" : 15,
+    "depthG" : 15,
+    "diterT" : 1,
+    "diterG" : 3,
+    "dropout" : 0.0,
+
+    "lr" : 0.001,
+    "clip_norm" : 5.0,
+    "step_beta" : 0.001,
+    "max_beta" : 1.0,
+    "warmup" : 10000,
+    "kl_anneal_iter" : 2000,
+
+    "anneal_rate" : 0.9,
+    "anneal_iter" : 25000,
+    "print_iter" : 50,
+    "save_iter" : 5000
+}

@@ -1,0 +1,115 @@
+{
+    "model" : {
+        "descripton" : "model selected for training, model config in ['jtvae', 'vjtnn', 'hiervae', 'hiervgnn']", 
+        "default" : "", 
+        "required" : "required for training"
+    },
+    "train_set" : {
+        "descripton" : "input train.txt file", 
+        "default" : "", 
+        "required" : "required for molecular dataloader"
+    },
+    "train_mode" : {
+        "descripton" : "training mode for models in ['single', 'pair', 'cond_pair']", 
+        "default" : "pair", 
+        "required" : "required for models"
+    },
+    "vocab_set" : {
+        "descripton" : "input vocab.txt file", 
+        "default" : "", 
+        "required" : "required for molecular dataloader"
+    },
+    "vocab_mode" : {
+        "descripton" : "vocabulary mode in ['Vocab', 'PairVocab']", 
+        "default" : "pair", 
+        "required" : "required for vocab"        
+    },
+    "valid_set" : {
+        "descripton" : "test valid.txtfile", 
+        "default" : "", 
+        "required" : "required for molecular dataloader"
+    },
+    "test_set" : {
+        "descripton" : "test test.txt file", 
+        "default" : "", 
+        "required" : "required for molecular dataloader"
+    },
+    "target_set" : {
+        "descripton" : "input target.txt file", 
+        "default" : "", 
+        "required" : "required for GAN training"
+    },
+    "preprocess_save_dir" : {"default" : ""},
+    "decode_save_dir" : {"default" : ""},
+    "ymols_set" : {"default" : ""},
+    "ymols_mode" : {"default" : "single"},
+    "ymols_preprocess_save_dir" : {"default" : ""},
+    "model_save_dir" : {
+        "descripton" : "output directory path", 
+        "default" : "", 
+        "required" : "required for models"
+    },
+    "conditional" : {
+        "descripton" : "if model is conditional", 
+        "default" : 0, 
+        "required" : "required for hgraph"        
+    },
+    "load_epoch" : {
+        "descripton" : "if model is loaded from checkpoint", 
+        "default" : -1, 
+        "required" : "required for model"
+    },
+    "load_model" : {
+        "descripton" : "ckpt path if model is loaded from checkpoint", 
+        "default" : "", 
+        "required" : "required for model"
+    },
+    "train_epoch" : {
+        "descripton" : "number of epoch training for models", 
+        "default" : 10, 
+        "required" : "required for models"
+    },
+    "batch_size" : {
+        "descripton" : "batch size for models", 
+        "default" : 32, 
+        "required" : "required for models"
+    },
+    "ncpu" : {
+        "descripton" : "preprocess data for training", 
+        "default" : 16, 
+        "required" : "required for preprocessing"
+    },
+
+    "num_decode" : {"default" : 20},
+    "sample" : {"default" : 0},
+    "test_num" : {"default" : 10},
+    "seed" : {"default" : 1},
+
+    "cond_size" : {"default" : 4},
+    "share_embedding" :  {"default" : true},
+    "use_molatt" :  {"default" : true},
+
+    "rnn_type" : {"default" : "LSTM"},
+    "hidden_size" : {"default" : 270},
+    "embed_size" : {"default" : 270},
+    "latent_size" : {"default" : 4},
+    "rand_size" : {"default" : 8}, 
+    "depthT" : {"default" : 20},
+    "depthG" : {"default" : 20},
+    "diterT" : {"default" : 1},
+    "diterG" : {"default" : 3},
+    "dropout" : {"default" : 0.0},
+
+    "lr" : {"default" : 1e-3},
+    "clip_norm" : {"default" : 20.0},
+    "step_beta": {"default" : 0.001},
+    "max_beta": {"default" : 1.0},
+    "warmup" : {"default" : 10000},
+    "kl_anneal_iter" : {"default" : 2000},
+    "beta" : {"default" : 0.3},
+
+    "anneal_rate" : {"default" : 0.9},
+    "print_iter" : {"default" : 50},
+    "save_iter" : {"default" : 5000}
+
+}

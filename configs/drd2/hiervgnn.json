@@ -1,0 +1,40 @@
+{
+    "model" : "hiervgnn",
+    "train_set" : "benchmarks/drd2/train_pairs.txt",
+    "train_mode" : "pair",
+    "vocab_set" : "benchmarks/vocab/drd2/vocab_hgraph.txt",
+    "vocab_mode" : "PairVocab",
+    "valid_set" : "benchmarks/drd2/valid.txt",
+    "test_set" : "benchmarks/drd2/test.txt",
+
+    "preprocess_save_dir" : "preprocessed/drd2/hiervgnn",
+    "decode_save_dir" : "results/drd2/hiervgnn",
+    "model_save_dir" : "ckpt/drd2/hiervgnn",
+    "ncpu" : 8,
+    "batch_size" : 32,
+
+    "train_epoch" : 12,
+    "load_model" : "",
+    "load_epoch" : -1,
+    "conditional" : 0,
+    "cond_size" : 4,
+
+    "rnn_type" : "LSTM",
+    "hidden_size" : 270,
+    "embed_size" : 270,
+    "latent_size" : 4,
+    "depthT" : 20,
+    "depthG" : 20,
+    "diterT" : 1,
+    "diterG" : 3,
+    "dropout" : 0.0,
+
+    "lr" : 0.001,
+    "clip_norm" : 20.0,
+    "beta" : 0.3,
+
+    "anneal_rate" : 0.9,
+    "print_iter" : 50,
+    "save_iter" : 500
+
+}

@@ -1,0 +1,44 @@
+{
+    "model" : "vjtnn",
+    "train_set" : "benchmarks/qed/train_pairs.txt",
+    "train_mode" : "pair",
+    "vocab_set" : "benchmarks/vocab/qed/vocab_vjtnn.txt",
+    "vocab_mode" : "Vocab",
+    "valid_set" : "benchmarks/qed/valid.txt",
+    "test_set" : "benchmarks/qed/test.txt",
+
+    "preprocess_save_dir" : "preprocessed/qed/vjtnn",
+    "decode_save_dir" : "results/qed/vjtnn",
+    "model_save_dir" : "ckpt/qed/vjtnn",
+
+    "ncpu" : 8,
+    "batch_size" : 32,
+        
+    "num_decode" : 20, 
+    "train_epoch" : 10,
+    "load_model" : "",
+    "load_epoch" : -1,
+
+    "rnn_type" : "LSTM",
+    "hidden_size" : 300,
+    "rand_size" : 8,
+    "depthT" : 6,
+    "depthG" : 3,
+    "share_embedding" : true,
+    "use_molatt" : true,
+
+    "diter" : 5,
+    "disc_hidden" : 300,
+    "gan_batch_size" : 10,
+    "gumbel" : true,
+    "gan_lrG" : 0.0001,
+    "gan_lrD" : 0.0001,
+    "kl_lambda" : 1.0,
+
+    "lr" : 0.001,
+    "clip_norm" : 50.0,
+    "beta" : 0.9,
+    "anneal_rate" : 0.9,
+    "print_iter" : 20,
+    "save_iter" : -1
+}

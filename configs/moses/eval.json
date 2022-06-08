@@ -1,0 +1,8 @@
+{
+    "test_file" : "data/mscoses/test.txt",
+    "res_file" : "results/moses/hiervae/hiervae_LSTM_results.csv",
+    "test_task" : "generation",
+    "dataset" : "moses"
+
+
+}

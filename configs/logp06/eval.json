@@ -1,0 +1,13 @@
+{
+    "test_file" : "",
+    "res_file" : "",
+    "test_task" : "translation",
+    "dataset" : "logp",
+
+    "num_decode" : 20,
+    "sim_delta" : 0.4,
+    "prop_delta" : 0.9,
+    "delta" : 0.6
+
+
+}
