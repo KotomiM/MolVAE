@@ -80,7 +80,7 @@ MolVAE has been tested under Python 3.7 with PyTorch 1.11 on cuda 11.4
    * With GAN loss (only for junction tree approach for molecule translation)
 
      ```bash
-     python tools/train_gain.py --config configs/xxx
+     python tools/train_gan.py --config configs/xxx
      ```
 
 ## Testing
